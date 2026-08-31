@@ -1,0 +1,3 @@
+Title,EmployeeName,EmployeeEmail,Department,DeviceType,RequestReason,Urgency,ApprovalStatus,ApproverName,ApproverEmail,ManagerComment,RequestDate,FulfillmentStatus,FulfilledByName,FulfilledByEmail,FulfilledDate,ApprovalRequested
+Laptop for data coursework,Emma Employee,emma.employee@contoso.example,Engineering,Laptop,Current device cannot run required local tools reliably.,High,Pending Approval,Maya Manager,maya.manager@contoso.example,,2026-08-31T09:30:00,Not Started,,,,TRUE
+Second monitor,Emma Employee,emma.employee@contoso.example,Engineering,Monitor,Improve productivity for documentation and analysis work.,Normal,Approved,Maya Manager,maya.manager@contoso.example,Approved for home office use.,2026-08-28T11:15:00,In Progress,Ivan IT,ivan.it@contoso.example,,TRUE
