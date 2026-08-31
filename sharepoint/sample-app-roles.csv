@@ -1,0 +1,4 @@
+Title,UserEmail,Role,ManagerEmail,Active
+Emma Employee,emma.employee@contoso.example,Employee,maya.manager@contoso.example,TRUE
+Maya Manager,maya.manager@contoso.example,Manager,,TRUE
+Ivan IT,ivan.it@contoso.example,IT,,TRUE
