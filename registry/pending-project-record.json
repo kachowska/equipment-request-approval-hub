@@ -1,0 +1,46 @@
+{
+  "id": "employee-equipment-request-approval-hub",
+  "name": "Employee Equipment Request & Approval Hub",
+  "status": "tenant_validation_pending",
+  "cv_eligible": false,
+  "priority": "future_high",
+  "types": [
+    "power-platform",
+    "workflow-automation",
+    "business-app",
+    "microsoft-365"
+  ],
+  "stack": [
+    "SharePoint Online",
+    "Microsoft Lists",
+    "Power Apps Canvas",
+    "Power Automate",
+    "Power Fx",
+    "Microsoft 365",
+    "Teams/Outlook"
+  ],
+  "concepts": [
+    "approval workflow",
+    "role-aware UI",
+    "business process automation",
+    "requirements traceability",
+    "manual testing",
+    "UAT",
+    "audit fields"
+  ],
+  "summary": "Internal equipment-request workflow with employee submission, manager approval and IT fulfillment using Microsoft 365 / Power Platform.",
+  "cv_bullets": [],
+  "best_for_roles": [
+    "Power Platform Intern",
+    "SharePoint Intern",
+    "Business Applications Intern",
+    "Workflow Automation",
+    "Microsoft 365 Intern"
+  ],
+  "validation": {
+    "local_prototype": "17/17 automated workflow tests passed on 2026-08-31",
+    "cloud_tenant": "not deployed",
+    "artifact_validator": "passed: 28 manual test cases, 5 UAT scenarios, 20 acceptance criteria traced"
+  },
+  "notes": "Promote to completed/cv_eligible only after tenant deployment and live acceptance testing."
+}
