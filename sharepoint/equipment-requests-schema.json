@@ -1,0 +1,145 @@
+{
+  "list_name": "Equipment Requests",
+  "purpose": "System of record for employee equipment requests",
+  "columns": [
+    {
+      "name": "Title",
+      "type": "Single line of text",
+      "required": true,
+      "notes": "Short request title, e.g. Laptop for new project"
+    },
+    {
+      "name": "EmployeeName",
+      "type": "Single line of text",
+      "required": true
+    },
+    {
+      "name": "EmployeeEmail",
+      "type": "Single line of text",
+      "required": true,
+      "indexed": true
+    },
+    {
+      "name": "Department",
+      "type": "Choice",
+      "required": true,
+      "choices": [
+        "Engineering",
+        "Finance",
+        "HR",
+        "Marketing",
+        "Operations",
+        "Sales",
+        "Other"
+      ]
+    },
+    {
+      "name": "DeviceType",
+      "type": "Choice",
+      "required": true,
+      "choices": [
+        "Laptop",
+        "Monitor",
+        "Keyboard",
+        "Mouse",
+        "Headset",
+        "Docking Station",
+        "Mobile Phone",
+        "Other"
+      ]
+    },
+    {
+      "name": "RequestReason",
+      "type": "Multiple lines of text",
+      "required": true
+    },
+    {
+      "name": "Urgency",
+      "type": "Choice",
+      "required": true,
+      "choices": [
+        "Low",
+        "Normal",
+        "High",
+        "Critical"
+      ],
+      "default": "Normal"
+    },
+    {
+      "name": "ApprovalStatus",
+      "type": "Choice",
+      "required": true,
+      "choices": [
+        "Draft",
+        "Pending Approval",
+        "Approved",
+        "Rejected"
+      ],
+      "default": "Draft",
+      "indexed": true
+    },
+    {
+      "name": "ApproverName",
+      "type": "Single line of text",
+      "required": false
+    },
+    {
+      "name": "ApproverEmail",
+      "type": "Single line of text",
+      "required": false,
+      "indexed": true
+    },
+    {
+      "name": "ManagerComment",
+      "type": "Multiple lines of text",
+      "required": false
+    },
+    {
+      "name": "RequestDate",
+      "type": "Date and time",
+      "required": true
+    },
+    {
+      "name": "FulfillmentStatus",
+      "type": "Choice",
+      "required": true,
+      "choices": [
+        "Not Started",
+        "In Progress",
+        "Completed",
+        "Not Applicable"
+      ],
+      "default": "Not Started",
+      "indexed": true
+    },
+    {
+      "name": "FulfilledByName",
+      "type": "Single line of text",
+      "required": false
+    },
+    {
+      "name": "FulfilledByEmail",
+      "type": "Single line of text",
+      "required": false
+    },
+    {
+      "name": "FulfilledDate",
+      "type": "Date and time",
+      "required": false
+    },
+    {
+      "name": "ApprovalRequested",
+      "type": "Yes/No",
+      "required": true,
+      "default": false
+    }
+  ],
+  "built_in_audit_fields": [
+    "ID",
+    "Created",
+    "Created By",
+    "Modified",
+    "Modified By"
+  ],
+  "version_history_recommended": true
+}
