@@ -1,0 +1,39 @@
+{
+  "list_name": "App Roles",
+  "purpose": "Maps Microsoft 365 users to application roles and managers",
+  "columns": [
+    {
+      "name": "Title",
+      "type": "Single line of text",
+      "required": true,
+      "notes": "Display name"
+    },
+    {
+      "name": "UserEmail",
+      "type": "Single line of text",
+      "required": true,
+      "indexed": true
+    },
+    {
+      "name": "Role",
+      "type": "Choice",
+      "required": true,
+      "choices": [
+        "Employee",
+        "Manager",
+        "IT"
+      ]
+    },
+    {
+      "name": "ManagerEmail",
+      "type": "Single line of text",
+      "required": false
+    },
+    {
+      "name": "Active",
+      "type": "Yes/No",
+      "required": true,
+      "default": true
+    }
+  ]
+}
